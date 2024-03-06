@@ -2,6 +2,9 @@ import os
 from flask import Flask, request, jsonify
 from mongoengine import connect
 from api import api_bp
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Flask app object
 app = Flask(__name__)
